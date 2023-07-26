@@ -1,0 +1,6 @@
+<input class="password" [(ngModel)] ="inputData" (ngModelChange)="checkPassword()" placeholder="Enter password:">
+<div>
+    <div class="section grey_color" [ngClass]="{red_color: isEasy,yellow_color: isMedium,green_color: isStrong,smalldigit: isSmall}"></div>
+    <div class="section grey_color" [ngClass]="{yellow_color:isMedium,green_color:isStrong,smalldigit: isSmall}"></div>
+    <div class="section grey_color" [ngClass]="{green_color:isStrong,smalldigit: isSmall}"></div>
+</div>
